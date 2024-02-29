@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Lora', serif;
+    color: #111111;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header a, header ul, footer div, p, h1, h2 {
+    animation: slideInTop 1s ease forwards;
+}
+
+p, h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.textoNosotros1 h1 {
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+
+.textoInicio p, .textoGaleria, .textoContacto {
+    padding-top: 0px;
+}
+
+header {
+    background-color: #84cca4;
+}
+
+header img {
+    max-height: 80px;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: translateX(10px);
+}
+
+.menu{
+    flex-grow: 0;
+}
+
+.menu-ul{
+    column-gap: 10px;
+    align-items: center;
+}
+
+.menu ul li a{
+    color: #111111;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover{
+    color: white;
+}
+
+.menu-button{
+    border: none;
+}
+
+.menu-button:focus{
+    box-shadow: none;
+}
+
+.padding-0{
+    padding: 0;
+}
+
+main {
+    background: url(./../img/fondoMain.png);
+}
+
+.contenedorInicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contenedorInicio div{
+    width: 50vw;
+    overflow: hidden;
+}
+
+.contenedorImagen img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.contenedorImagen img:hover {
+    transform: scale(1.2);
+}
+
+.textoNosotros1 h1 {
+    font-size: 2rem;
+}
+
+.contenedorGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+.contenedorGrid div img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.contenedorGrid div img:hover {
+    transform: scale(1.2);
+}
+
+.contenedorGrid div {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorGrid div p {
+    padding: 0px 50px 0px 50px;
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.producto {
+    width: 25vw;
+    border: 2px solid #C3C3C3;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 10px;
+    box-shadow: 15px 15px 10px 5px rgba(120, 120, 120, 0.63);
+    background-color: white;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 10px 5px rgba(0, 0, 0, 0.63);
+}
+
+.producto img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover img {
+    transform: scale(1.2);
+    
+}
+
+.producto div {
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.tituloProducto {
+    font-size: 22px;
+    text-align: center;
+}
+
+.producto p {
+    padding: 0px 2px 20px 2px;
+}
+
+.carousel img {
+    align-self: center;
+    width: 100%;
+    transition: transform 0.5s ease; 
+}
+
+.carousel img:hover {
+    transform: scale(1.2); 
+}
+
+.contenedorContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+iframe {
+    margin:  0px 20px 20px 20px;
+    height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    border: 2px solid #C3C3C3;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.formularioContacto {
+    margin:  0px 20px 20px 20px;
+    height: 500px;
+    width: 500px;
+    background-image: url(./../img/fondoFormulario.png);
+    border: 2px solid #C3C3C3;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.formularioContacto:hover, iframe:hover {
+    box-shadow: 0px 0px 15px 5px rgba(65, 65, 65, 0.63);
+}
+
+.formularioContacto div,
+.formularioContacto input[type="text"],
+.formularioContacto input[type="email"],
+.formularioContacto input[type="tel"],
+.formularioContacto textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.formularioContacto input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #84cca4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.formularioContacto input[type="submit"]:hover {
+    background-color: #8cccca;
+}
+
+footer {
+    background-color:  #8cccca;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+footer .redes {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #111111;
+    transition: transform 0.3s ease;
+}
+
+footer a:hover{
+    transform: scale(1.2);
+}
+
+footer img {
+    transition: transform 0.3s ease;
+}
+
+footer img:hover{
+    transform: scale(1.2);
+}
+
+/* Media query tablet - (entre 768px y 1024px) */
+@media screen and (max-width: 1024px) {
+
+    h1, h2, .textoNosotros1 h1 {
+        font-size: 22px;
+    }
+
+    .tituloProducto {
+        font-size: 20px;
+    }
+
+} 
+
+/* Media query mobile - (entre 320px y 768px) */
+@media screen and (max-width: 767.98px){
+    .menu{
+        position: absolute;
+        top: 105px;
+        background-color: #84cca4;
+        width: 100vw;
+        z-index: 1;
+    }
+
+    .contenedorInicio {
+        flex-direction: column;
+    }
+
+    .contenedorInicio img {
+        width: 100%;
+    }
+
+    .contenedorInicio div {
+        width: 100%;
+    }
+
+    .contenedorGrid {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "imagenNosotros1"
+        "textoNosotros1"
+        "imagenNosotros2"
+        "textoNosotros2";
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .imagenNosotros1 {
+        grid-area: imagenNosotros1;
+    }
+
+    .imagenNosotros2 {
+        grid-area: imagenNosotros2;
+    }
+
+    .textoNosotros1 {
+        grid-area: textoNosotros1;
+    }
+
+    .textoNosotros2 {
+        grid-area: textoNosotros2;
+    }
+
+    .productos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px
+    }
+
+    .producto {
+        width: 80vw;
+    }
+    
+    .carousel img {
+        object-fit: cover;
+        height: 60vh;
+    }
+
+    .contenedorGrid div p {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .contenedorContacto {
+        flex-wrap: wrap-reverse;
+    }
+}
