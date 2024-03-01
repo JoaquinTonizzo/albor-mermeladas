@@ -220,7 +220,7 @@ iframe {
     width: 500px;
     border-radius: 5px;
     border: 2px solid #C3C3C3;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .formularioContacto {
@@ -236,7 +236,7 @@ iframe {
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .formularioContacto:hover, iframe:hover {
@@ -261,7 +261,7 @@ iframe {
     border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .formularioContacto input[type="submit"]:hover {
