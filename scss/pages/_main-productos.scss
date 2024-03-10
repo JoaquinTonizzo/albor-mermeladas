@@ -1,0 +1,41 @@
+.productos {
+    @include flex(row, space-evenly, initial);
+
+    .producto {
+        width: 25vw;
+        @extend %borde;
+        @include flex(column, flex-start, initial);
+        row-gap: 10px;
+        box-shadow: $sombra;
+        background-image: url(./../img/fondoCuadriculado.png);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: $sombra-hover;
+        }
+
+        img {
+            aspect-ratio: 1 / 1;
+            width: 100%;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        div {
+            overflow: hidden;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .tituloProducto {
+            @extend %fuente;
+        }
+
+        p {
+            padding: 0px 2px 20px 2px;
+        }
+    }
+}

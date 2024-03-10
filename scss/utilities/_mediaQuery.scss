@@ -1,0 +1,84 @@
+/* Media query tablet - (entre 768px y 1024px) */
+@media screen and (max-width: 1024px) {
+    h1,
+    h2,
+    .contenedorGrid .textoNosotros1 h1 {
+        font-size: 22px;
+    }
+
+    .tituloProducto {
+        font-size: 20px;
+    }
+
+}
+
+/* Media query mobile - (entre 320px y 768px) */
+@media screen and (max-width: 767.98px) {
+    .menu {
+        position: absolute;
+        top: 105px;
+        background-color: $primary-color;
+        width: 100vw;
+        z-index: 1;
+    }
+
+    .contenedorInicio {
+        flex-direction: column;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    .contenedorGrid {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "imagenNosotros1"
+            "textoNosotros1"
+            "imagenNosotros2"
+            "textoNosotros2";
+        gap: 20px;
+        padding-bottom: 20px;
+
+        div p {
+            padding: 0px 10px 0px 10px;
+        }
+
+        .imagenNosotros1 {
+            grid-area: imagenNosotros1;
+        }
+
+        .imagenNosotros2 {
+            grid-area: imagenNosotros2;
+        }
+
+        .textoNosotros1 {
+            grid-area: textoNosotros1;
+        }
+
+        .textoNosotros2 {
+            grid-area: textoNosotros2;
+        }
+    }
+
+    .productos {
+        @include flex(column, center, center);
+        row-gap: 30px;
+
+        .producto {
+            width: 80vw;
+        }
+    }
+
+    .carousel {
+        img {
+            object-fit: cover;
+            height: 60vh;
+        }
+    }
+
+    .contenedorContacto {
+        flex-wrap: wrap-reverse;
+    }
+}

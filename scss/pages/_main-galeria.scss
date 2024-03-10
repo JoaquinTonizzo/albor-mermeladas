@@ -1,0 +1,11 @@
+.carousel {
+    img {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        transition: transform 0.5s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

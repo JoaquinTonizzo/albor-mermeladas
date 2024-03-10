@@ -1,0 +1,30 @@
+.contenedorGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    div {
+        overflow: hidden;
+        @include flex(column, center, center);
+
+        p {
+            padding: 0px 50px 0px 50px;
+        }
+
+        img {
+            aspect-ratio: 3 / 2;
+            @include sizes(100%, 100%);
+            transition: transform 0.3s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .textoNosotros1 h1 {
+        padding-bottom: 10px;
+        padding-top: 0px;
+        font-size: 2rem;
+    }
+}
+

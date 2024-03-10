@@ -1,0 +1,48 @@
+.contenedorContacto {
+    @include flex(row, space-around, center);
+
+    iframe {
+        margin:  0px 20px 20px 20px;
+        @include sizes(500px, 500px);
+        @extend %borde;
+        transition: box-shadow 0.3s ease;
+        &:hover {
+            box-shadow: $sombra;
+        }
+    }
+    
+    .formularioContacto {
+        @extend iframe;
+        background-image: url(./../img/fondoCuadriculado.png);
+        padding: 10px;
+        @include flex(column, center, center);
+        font-weight: 500;
+        
+        div,
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            resize: none;
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: $primary-color;
+            @extend %borde;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+    
+            &:hover {
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+
+
+

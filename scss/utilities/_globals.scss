@@ -1,0 +1,17 @@
+header a, header ul, footer div, p, h1, h2 {
+    animation: slideInTop 1s ease forwards;
+}
+
+p, h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.textoInicio p, .textoGaleria, .textoContacto {
+    padding-top: 0px;
+}
+
+main {
+    background-image: url(./../img/fondoMain.png);
+}

@@ -1,0 +1,51 @@
+header {
+    background-color: $primary-color;
+
+    img {
+        max-height: 80px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateX(10px);
+        }
+    }
+
+    .menu {
+        flex-grow: 0;
+
+        ul {
+            column-gap: 10px;
+            align-items: center;
+
+            li {
+                a {
+                    color: black;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+
+            .actual {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .menu-button {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .padding-0 {
+        padding: 0;
+    }
+}
