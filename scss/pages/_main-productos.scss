@@ -2,6 +2,7 @@
     @include flex(row, space-evenly, initial);
 
     .producto {
+        animation: slideInLeft 1s ease;
         width: 25vw;
         @extend %borde;
         @include flex(column, flex-start, initial);

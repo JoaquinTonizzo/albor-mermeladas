@@ -1,9 +1,10 @@
 header {
-    background-color: $primary-color;
+    background-image: linear-gradient(to top, $primary-color, $secondary-color);
 
     img {
         max-height: 80px;
         transition: transform 0.3s ease;
+        animation: slideInLeft 1s ease;
 
         &:hover {
             transform: translateX(10px);

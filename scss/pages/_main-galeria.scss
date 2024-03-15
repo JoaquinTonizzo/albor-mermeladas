@@ -1,4 +1,6 @@
 .carousel {
+    animation: slideInLeft 1s ease;
+
     img {
         aspect-ratio: 16 / 9;
         width: 100%;
