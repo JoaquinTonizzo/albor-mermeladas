@@ -1,4 +1,3 @@
-Albor Mermeladas Artesanales 🍓
 ¡Bienvenido al repositorio de la página web de Albor, una empresa dedicada a la producción de mermeladas artesanales!
 
 Este proyecto representa el trabajo final realizado como parte del curso de Desarrollo Web de Coderhouse.
@@ -26,13 +25,7 @@ Uso de gradientes y animaciones para una experiencia visual atractiva.
 Implementación de flexbox y grid para un diseño flexible y modular.
 Aplicación de pseudo clases para estilizar elementos en diferentes estados.
 
-Contribuciones 🤝
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar este proyecto, no dudes en abrir un issue o enviar un pull request.
-
-Créditos 👏
-Este proyecto fue desarrollado por Joaquin Tonizzo.
-
 Contacto 📧
 Para más información, puedes contactar a joaquintonizzo1@gmail.com.
 
-¡Gracias por tu interés! 🍇🍒🍑
+¡Gracias por tu interés!
