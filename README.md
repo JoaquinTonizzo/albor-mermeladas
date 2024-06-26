@@ -10,12 +10,6 @@ Este proyecto representa el trabajo final realizado como parte del curso de Desa
 - CSS3
 - SASS
 - Bootstrap
-- Gradients
-- Animaciones
-- Transform y Transition
-- Flexbox
-- Grid
-- Pseudo Clases
 
 ## Descripción del Proyecto 📝
 
