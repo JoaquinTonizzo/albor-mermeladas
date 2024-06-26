@@ -7,9 +7,9 @@ HTML5
 CSS3
 SASS
 Bootstrap
-Gradients 🌈
-Animaciones 🎨
-Transform y Transition 🔄
+Gradients
+Animaciones
+Transform y Transition
 Flexbox
 Grid
 Pseudo Clases
@@ -25,7 +25,6 @@ Uso de gradientes y animaciones para una experiencia visual atractiva.
 Implementación de flexbox y grid para un diseño flexible y modular.
 Aplicación de pseudo clases para estilizar elementos en diferentes estados.
 
-Contacto 📧
 Para más información, puedes contactar a joaquintonizzo1@gmail.com.
 
 ¡Gracias por tu interés!
