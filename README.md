@@ -1,8 +1,6 @@
-# ¡Bienvenido al repositorio de la página web de Albor!
+# Proyecto Final - Desarrollo Web Coderhouse
 
-Una empresa dedicada a la producción de mermeladas artesanales.
-
-Este proyecto representa el trabajo final realizado como parte del curso de Desarrollo Web de Coderhouse.
+Albor es una empresa dedicada a la producción de mermeladas artesanales. Este proyecto representa el trabajo final realizado como parte del curso de Desarrollo Web de Coderhouse.
 
 ## Tecnologías Utilizadas 🛠️
 
@@ -13,7 +11,8 @@ Este proyecto representa el trabajo final realizado como parte del curso de Desa
 
 ## Descripción del Proyecto 📝
 
-Albor es una empresa ficticia que ofrece una amplia gama de mermeladas artesanales elaboradas con ingredientes frescos y naturales. La página web tiene como objetivo promocionar los productos de la marca, así como proporcionar información sobre la empresa y sus valores.
+Albor es una empresa que ofrece una amplia gama de mermeladas artesanales elaboradas con ingredientes frescos y naturales. 
+La página web tiene como objetivo promocionar los productos de la marca, así como proporcionar información sobre la empresa y sus valores.
 
 ## Funcionalidades Destacadas 🚀
 
